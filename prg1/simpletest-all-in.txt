@@ -1,0 +1,21 @@
+# VERY simple basic test of all (compulsory+non-compulsory) commands
+# Test all compulsory commands
+read "simpletest-compulsory-in.txt"
+# Test non-compulsory commands
+stops_closest_to 2
+region_bounding_box Reg
+region_bounding_box Reg2
+add_region Reg3 Region-3
+region_bounding_box Reg3
+stops_common_region 1 2
+stops_common_region 1 3
+add_stop 4 Four (8,2)
+add_stop 5 Five (2,4)
+add_stop 6 Six (3,9)
+add_stop 7 Seven (7,7)
+stops_closest_to 1
+remove_stop 3
+region_bounding_box Reg2
+find_stops Three
+stops_alphabetically
+stop_count

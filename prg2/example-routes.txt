@@ -1,0 +1,4 @@
+# Add routes
+add_route A 1 3 4
+add_route B 4 6 3
+add_route C 1 2 5

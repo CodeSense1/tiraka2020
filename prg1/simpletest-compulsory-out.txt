@@ -1,0 +1,113 @@
+> # VERY simple basic test of all compulsory commands
+> # Clear the data structures and check that stop count is zero
+> clear_all
+Cleared everything.
+> stop_count
+Number of stops: 0
+> # Test compulsory commands with empty data
+> all_stops
+No stops!
+> all_regions
+No regions!
+> stops_coord_order
+No stops!
+> stops_alphabetically
+No stops!
+> min_coord
+Failed (NO_... returned)!!
+> max_coord
+Failed (NO_... returned)!!
+> find_stops MyStop
+Failed (NO_... returned)!!
+> # Add one region without stops and test commands
+> add_region Reg Region
+Region: Region: id=Reg
+> all_regions
+Region: id=Reg
+> region_name Reg
+Region ID Reg has name 'Region'
+Region: id=Reg
+> # Add one stop to the region and test commands
+> add_stop 1 One (1,1)
+One: pos=(1,1), id=1
+> add_stop_to_region 1 Reg
+Added stop One to region Region
+Region: Region: id=Reg
+One: pos=(1,1), id=1
+> stop_count
+Number of stops: 1
+> all_stops
+One: pos=(1,1), id=1
+> stops_coord_order
+One: pos=(1,1), id=1
+> stops_alphabetically
+One: pos=(1,1), id=1
+> min_coord
+One: pos=(1,1), id=1
+> max_coord
+One: pos=(1,1), id=1
+> find_stops One
+One: pos=(1,1), id=1
+> change_stop_name 1 Yksi
+Yksi: pos=(1,1), id=1
+> find_stops Yksi
+Yksi: pos=(1,1), id=1
+> find_stops One
+Failed (NO_... returned)!!
+> region_bounding_box Reg
+Stops in region Region (and subregions) are within (1,1)-(1,1)
+Region: id=Reg
+> # Add another stop, test more commands
+> add_stop 2 Two (2,2)
+Two: pos=(2,2), id=2
+> change_stop_coord 2 (8,8)
+Two: pos=(8,8), id=2
+> all_stops
+1. Yksi: pos=(1,1), id=1
+2. Two: pos=(8,8), id=2
+> min_coord
+Yksi: pos=(1,1), id=1
+> max_coord
+Two: pos=(8,8), id=2
+> add_stop_to_region 2 Reg
+Added stop Two to region Region
+Region: Region: id=Reg
+Two: pos=(8,8), id=2
+> region_bounding_box Reg
+Stops in region Region (and subregions) are within (1,1)-(8,8)
+Region: id=Reg
+> stops_alphabetically
+1. Two: pos=(8,8), id=2
+2. Yksi: pos=(1,1), id=1
+> stops_coord_order
+1. Yksi: pos=(1,1), id=1
+2. Two: pos=(8,8), id=2
+> min_coord
+Yksi: pos=(1,1), id=1
+> max_coord
+Two: pos=(8,8), id=2
+> # And a third stop and another region
+> add_stop 3 Three (12,12)
+Three: pos=(12,12), id=3
+> add_region Reg2 Region-2
+Region: Region-2: id=Reg2
+> all_regions
+1. Region: id=Reg
+2. Region-2: id=Reg2
+> add_stop_to_region 3 Reg2
+Added stop Three to region Region-2
+Region: Region-2: id=Reg2
+Three: pos=(12,12), id=3
+> region_bounding_box Reg2
+Stops in region Region-2 (and subregions) are within (12,12)-(12,12)
+Region-2: id=Reg2
+> add_subregion_to_region Reg Reg2
+Added subregion Region to region Region-2
+> region_bounding_box Reg2
+Stops in region Region-2 (and subregions) are within (1,1)-(12,12)
+Region-2: id=Reg2
+> stop_regions 2
+Regions for stop Two: pos=(8,8), id=2
+1. Region: id=Reg
+2. Region-2: id=Reg2
+> quit

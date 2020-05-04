@@ -1,0 +1,2 @@
+# Test the performance of stops_closest_to
+perftest stops_closest_to 20 500 10;30;100;300;1000;3000;10000;30000;100000;300000

@@ -1,0 +1,468 @@
+> read "Tretest-compulsory-in.txt"
+** Commands from 'Tretest-compulsory-in.txt'
+> read "Tre-Ksksta-stops.txt"
+** Commands from 'Tre-Ksksta-stops.txt'
+> add_stop 35 Keskustori C (646,571)
+Keskustori C: pos=(646,571), id=35
+> add_stop 44 Laukontori (712,292)
+Laukontori: pos=(712,292), id=44
+> add_stop 526 Rautatieasema F (1238,591)
+Rautatieasema F: pos=(1238,591), id=526
+> add_stop 537 Paloasema (745,954)
+Paloasema: pos=(745,954), id=537
+> add_stop 52 Pikkupalatsi (0,966)
+Pikkupalatsi: pos=(0,966), id=52
+> add_stop 87 Finlayson (352,885)
+Finlayson: pos=(352,885), id=87
+> add_stop 3 Keskustori A (522,723)
+Keskustori A: pos=(522,723), id=3
+> add_stop 14 Keskustori E (539,691)
+Keskustori E: pos=(539,691), id=14
+> add_stop 36 Keskustori B (531,707)
+Keskustori B: pos=(531,707), id=36
+> add_stop 38 Finlayson (468,885)
+Finlayson: pos=(468,885), id=38
+> add_stop 69 Kauppakatu (296,617)
+Kauppakatu: pos=(296,617), id=69
+> add_stop 46 Satamakatu 8 (448,246)
+Satamakatu 8: pos=(448,246), id=46
+> add_stop 47 Pyynikin koulu (374,132)
+Pyynikin koulu: pos=(374,132), id=47
+> add_stop 50 Tyovaenteatteri  (360,265)
+Tyovaenteatteri : pos=(360,265), id=50
+> add_stop 80 Hameenpuisto 31 (276,431)
+Hameenpuisto 31: pos=(276,431), id=80
+> add_stop 92 Nalkalantori (644,0)
+Nalkalantori: pos=(644,0), id=92
+> add_stop 10 Keskustori F (441,522)
+Keskustori F: pos=(441,522), id=10
+> add_stop 11 Keskustori G (455,524)
+Keskustori G: pos=(455,524), id=11
+> add_stop 1 Keskustori M (696,535)
+Keskustori M: pos=(696,535), id=1
+> add_stop 2 Keskustori L (692,541)
+Keskustori L: pos=(692,541), id=2
+> add_stop 5 Keskustori P (704,516)
+Keskustori P: pos=(704,516), id=5
+> add_stop 7 Keskustori O (702,523)
+Keskustori O: pos=(702,523), id=7
+> add_stop 8 Keskustori N (699,530)
+Keskustori N: pos=(699,530), id=8
+> add_stop 12 Keskustori H (680,556)
+Keskustori H: pos=(680,556), id=12
+> add_stop 15 Keskustori D (669,574)
+Keskustori D: pos=(669,574), id=15
+> add_stop 41 Keskustori R (711,507)
+Keskustori R: pos=(711,507), id=41
+> add_stop 42 Keskustori I (661,528)
+Keskustori I: pos=(661,528), id=42
+> add_stop 108 Rongankatu 9 (1058,869)
+Rongankatu 9: pos=(1058,869), id=108
+> add_stop 504 Rautatieasema C (1098,630)
+Rautatieasema C: pos=(1098,630), id=504
+> add_stop 505 Rautatieasema A (1077,631)
+Rautatieasema A: pos=(1077,631), id=505
+> add_stop 506 Rautatieasema G (1213,601)
+Rautatieasema G: pos=(1213,601), id=506
+> add_stop 519 Koskipuisto I (937,535)
+Koskipuisto I: pos=(937,535), id=519
+> add_stop 528 Klassillinen koulu (1079,898)
+Klassillinen koulu: pos=(1079,898), id=528
+> add_stop 529 Klassillinen koulu (1037,937)
+Klassillinen koulu: pos=(1037,937), id=529
+> add_stop 536 Paloasema (736,934)
+Paloasema: pos=(736,934), id=536
+> add_stop 553 Aleksanterinkatu  (1104,489)
+Aleksanterinkatu : pos=(1104,489), id=553
+> add_stop 575 Rautatieasema B (1078,630)
+Rautatieasema B: pos=(1078,630), id=575
+> 
+** End of commands from 'Tre-Ksksta-stops.txt'
+> read "Tre-Ksksta-regions.txt"
+** Commands from 'Tre-Ksksta-regions.txt'
+> add_region Ksksta Keskusta
+Region: Keskusta: id=Ksksta
+> add_stop_to_region 35 Ksksta
+Added stop Keskustori C to region Keskusta
+Region: Keskusta: id=Ksksta
+Keskustori C: pos=(646,571), id=35
+> add_stop_to_region 44 Ksksta
+Added stop Laukontori to region Keskusta
+Region: Keskusta: id=Ksksta
+Laukontori: pos=(712,292), id=44
+> add_stop_to_region 526 Ksksta
+Added stop Rautatieasema F to region Keskusta
+Region: Keskusta: id=Ksksta
+Rautatieasema F: pos=(1238,591), id=526
+> add_stop_to_region 537 Ksksta
+Added stop Paloasema to region Keskusta
+Region: Keskusta: id=Ksksta
+Paloasema: pos=(745,954), id=537
+> add_region Fnlsn Finlayson
+Region: Finlayson: id=Fnlsn
+> add_stop_to_region 52 Fnlsn
+Added stop Pikkupalatsi to region Finlayson
+Region: Finlayson: id=Fnlsn
+Pikkupalatsi: pos=(0,966), id=52
+> add_stop_to_region 87 Fnlsn
+Added stop Finlayson to region Finlayson
+Region: Finlayson: id=Fnlsn
+Finlayson: pos=(352,885), id=87
+> add_subregion_to_region Fnlsn Ksksta
+Added subregion Finlayson to region Keskusta
+> add_region Tmmrkski Tammerkoski
+Region: Tammerkoski: id=Tmmrkski
+> add_stop_to_region 3 Tmmrkski
+Added stop Keskustori A to region Tammerkoski
+Region: Tammerkoski: id=Tmmrkski
+Keskustori A: pos=(522,723), id=3
+> add_stop_to_region 14 Tmmrkski
+Added stop Keskustori E to region Tammerkoski
+Region: Tammerkoski: id=Tmmrkski
+Keskustori E: pos=(539,691), id=14
+> add_stop_to_region 36 Tmmrkski
+Added stop Keskustori B to region Tammerkoski
+Region: Tammerkoski: id=Tmmrkski
+Keskustori B: pos=(531,707), id=36
+> add_stop_to_region 38 Tmmrkski
+Added stop Finlayson to region Tammerkoski
+Region: Tammerkoski: id=Tmmrkski
+Finlayson: pos=(468,885), id=38
+> add_stop_to_region 69 Tmmrkski
+Added stop Kauppakatu to region Tammerkoski
+Region: Tammerkoski: id=Tmmrkski
+Kauppakatu: pos=(296,617), id=69
+> add_subregion_to_region Tmmrkski Ksksta
+Added subregion Tammerkoski to region Keskusta
+> add_region Nlkla Nalkala
+Region: Nalkala: id=Nlkla
+> add_stop_to_region 46 Nlkla
+Added stop Satamakatu 8 to region Nalkala
+Region: Nalkala: id=Nlkla
+Satamakatu 8: pos=(448,246), id=46
+> add_stop_to_region 47 Nlkla
+Added stop Pyynikin koulu to region Nalkala
+Region: Nalkala: id=Nlkla
+Pyynikin koulu: pos=(374,132), id=47
+> add_stop_to_region 50 Nlkla
+Added stop Tyovaenteatteri  to region Nalkala
+Region: Nalkala: id=Nlkla
+Tyovaenteatteri : pos=(360,265), id=50
+> add_stop_to_region 80 Nlkla
+Added stop Hameenpuisto 31 to region Nalkala
+Region: Nalkala: id=Nlkla
+Hameenpuisto 31: pos=(276,431), id=80
+> add_stop_to_region 92 Nlkla
+Added stop Nalkalantori to region Nalkala
+Region: Nalkala: id=Nlkla
+Nalkalantori: pos=(644,0), id=92
+> add_subregion_to_region Nlkla Ksksta
+Added subregion Nalkala to region Keskusta
+> add_region Sks Sokos
+Region: Sokos: id=Sks
+> add_stop_to_region 10 Sks
+Added stop Keskustori F to region Sokos
+Region: Sokos: id=Sks
+Keskustori F: pos=(441,522), id=10
+> add_stop_to_region 11 Sks
+Added stop Keskustori G to region Sokos
+Region: Sokos: id=Sks
+Keskustori G: pos=(455,524), id=11
+> add_subregion_to_region Sks Nlkla
+Added subregion Sokos to region Nalkala
+> add_region Kskstri Keskustori
+Region: Keskustori: id=Kskstri
+> add_stop_to_region 1 Kskstri
+Added stop Keskustori M to region Keskustori
+Region: Keskustori: id=Kskstri
+Keskustori M: pos=(696,535), id=1
+> add_stop_to_region 2 Kskstri
+Added stop Keskustori L to region Keskustori
+Region: Keskustori: id=Kskstri
+Keskustori L: pos=(692,541), id=2
+> add_stop_to_region 5 Kskstri
+Added stop Keskustori P to region Keskustori
+Region: Keskustori: id=Kskstri
+Keskustori P: pos=(704,516), id=5
+> add_stop_to_region 7 Kskstri
+Added stop Keskustori O to region Keskustori
+Region: Keskustori: id=Kskstri
+Keskustori O: pos=(702,523), id=7
+> add_stop_to_region 8 Kskstri
+Added stop Keskustori N to region Keskustori
+Region: Keskustori: id=Kskstri
+Keskustori N: pos=(699,530), id=8
+> add_stop_to_region 12 Kskstri
+Added stop Keskustori H to region Keskustori
+Region: Keskustori: id=Kskstri
+Keskustori H: pos=(680,556), id=12
+> add_stop_to_region 15 Kskstri
+Added stop Keskustori D to region Keskustori
+Region: Keskustori: id=Kskstri
+Keskustori D: pos=(669,574), id=15
+> add_stop_to_region 41 Kskstri
+Added stop Keskustori R to region Keskustori
+Region: Keskustori: id=Kskstri
+Keskustori R: pos=(711,507), id=41
+> add_stop_to_region 42 Kskstri
+Added stop Keskustori I to region Keskustori
+Region: Keskustori: id=Kskstri
+Keskustori I: pos=(661,528), id=42
+> add_subregion_to_region Kskstri Nlkla
+Added subregion Keskustori to region Nalkala
+> add_region Kyttla Kyttala
+Region: Kyttala: id=Kyttla
+> add_stop_to_region 108 Kyttla
+Added stop Rongankatu 9 to region Kyttala
+Region: Kyttala: id=Kyttla
+Rongankatu 9: pos=(1058,869), id=108
+> add_stop_to_region 504 Kyttla
+Added stop Rautatieasema C to region Kyttala
+Region: Kyttala: id=Kyttla
+Rautatieasema C: pos=(1098,630), id=504
+> add_stop_to_region 505 Kyttla
+Added stop Rautatieasema A to region Kyttala
+Region: Kyttala: id=Kyttla
+Rautatieasema A: pos=(1077,631), id=505
+> add_stop_to_region 506 Kyttla
+Added stop Rautatieasema G to region Kyttala
+Region: Kyttala: id=Kyttla
+Rautatieasema G: pos=(1213,601), id=506
+> add_stop_to_region 519 Kyttla
+Added stop Koskipuisto I to region Kyttala
+Region: Kyttala: id=Kyttla
+Koskipuisto I: pos=(937,535), id=519
+> add_stop_to_region 528 Kyttla
+Added stop Klassillinen koulu to region Kyttala
+Region: Kyttala: id=Kyttla
+Klassillinen koulu: pos=(1079,898), id=528
+> add_stop_to_region 529 Kyttla
+Added stop Klassillinen koulu to region Kyttala
+Region: Kyttala: id=Kyttla
+Klassillinen koulu: pos=(1037,937), id=529
+> add_stop_to_region 536 Kyttla
+Added stop Paloasema to region Kyttala
+Region: Kyttala: id=Kyttla
+Paloasema: pos=(736,934), id=536
+> add_stop_to_region 553 Kyttla
+Added stop Aleksanterinkatu  to region Kyttala
+Region: Kyttala: id=Kyttla
+Aleksanterinkatu : pos=(1104,489), id=553
+> add_stop_to_region 575 Kyttla
+Added stop Rautatieasema B to region Kyttala
+Region: Kyttala: id=Kyttla
+Rautatieasema B: pos=(1078,630), id=575
+> add_subregion_to_region Kyttla Ksksta
+Added subregion Kyttala to region Keskusta
+> 
+** End of commands from 'Tre-Ksksta-regions.txt'
+> # Test basic operations
+> stop_count
+Number of stops: 37
+> min_coord
+Pyynikin koulu: pos=(374,132), id=47
+> max_coord
+Klassillinen koulu: pos=(1079,898), id=528
+> find_stops Laukontori
+Laukontori: pos=(712,292), id=44
+> find_stops Finlayson
+1. Finlayson: pos=(468,885), id=38
+2. Finlayson: pos=(352,885), id=87
+> change_stop_name 38 Finlayson 2
+Finlayson 2: pos=(468,885), id=38
+> find_stops Finlayson
+Finlayson: pos=(352,885), id=87
+> stops_alphabetically
+1. Aleksanterinkatu : pos=(1104,489), id=553
+2. Finlayson: pos=(352,885), id=87
+3. Finlayson 2: pos=(468,885), id=38
+4. Hameenpuisto 31: pos=(276,431), id=80
+5. Kauppakatu: pos=(296,617), id=69
+6. Keskustori A: pos=(522,723), id=3
+7. Keskustori B: pos=(531,707), id=36
+8. Keskustori C: pos=(646,571), id=35
+9. Keskustori D: pos=(669,574), id=15
+10. Keskustori E: pos=(539,691), id=14
+11. Keskustori F: pos=(441,522), id=10
+12. Keskustori G: pos=(455,524), id=11
+13. Keskustori H: pos=(680,556), id=12
+14. Keskustori I: pos=(661,528), id=42
+15. Keskustori L: pos=(692,541), id=2
+16. Keskustori M: pos=(696,535), id=1
+17. Keskustori N: pos=(699,530), id=8
+18. Keskustori O: pos=(702,523), id=7
+19. Keskustori P: pos=(704,516), id=5
+20. Keskustori R: pos=(711,507), id=41
+21. Klassillinen koulu: pos=(1079,898), id=528
+22. Klassillinen koulu: pos=(1037,937), id=529
+23. Koskipuisto I: pos=(937,535), id=519
+24. Laukontori: pos=(712,292), id=44
+25. Nalkalantori: pos=(644,0), id=92
+26. Paloasema: pos=(745,954), id=537
+27. Paloasema: pos=(736,934), id=536
+28. Pikkupalatsi: pos=(0,966), id=52
+29. Pyynikin koulu: pos=(374,132), id=47
+30. Rautatieasema A: pos=(1077,631), id=505
+31. Rautatieasema B: pos=(1078,630), id=575
+32. Rautatieasema C: pos=(1098,630), id=504
+33. Rautatieasema F: pos=(1238,591), id=526
+34. Rautatieasema G: pos=(1213,601), id=506
+35. Rongankatu 9: pos=(1058,869), id=108
+36. Satamakatu 8: pos=(448,246), id=46
+37. Tyovaenteatteri : pos=(360,265), id=50
+> stops_coord_order
+1. Pyynikin koulu: pos=(374,132), id=47
+2. Tyovaenteatteri : pos=(360,265), id=50
+3. Satamakatu 8: pos=(448,246), id=46
+4. Hameenpuisto 31: pos=(276,431), id=80
+5. Nalkalantori: pos=(644,0), id=92
+6. Keskustori F: pos=(441,522), id=10
+7. Kauppakatu: pos=(296,617), id=69
+8. Keskustori G: pos=(455,524), id=11
+9. Laukontori: pos=(712,292), id=44
+10. Keskustori I: pos=(661,528), id=42
+11. Keskustori C: pos=(646,571), id=35
+12. Keskustori P: pos=(704,516), id=5
+13. Keskustori R: pos=(711,507), id=41
+14. Keskustori O: pos=(702,523), id=7
+15. Keskustori E: pos=(539,691), id=14
+16. Keskustori N: pos=(699,530), id=8
+17. Keskustori M: pos=(696,535), id=1
+18. Keskustori H: pos=(680,556), id=12
+19. Keskustori L: pos=(692,541), id=2
+20. Keskustori D: pos=(669,574), id=15
+21. Keskustori B: pos=(531,707), id=36
+22. Keskustori A: pos=(522,723), id=3
+23. Finlayson: pos=(352,885), id=87
+24. Pikkupalatsi: pos=(0,966), id=52
+25. Finlayson 2: pos=(468,885), id=38
+26. Koskipuisto I: pos=(937,535), id=519
+27. Paloasema: pos=(736,934), id=536
+28. Aleksanterinkatu : pos=(1104,489), id=553
+29. Paloasema: pos=(745,954), id=537
+30. Rautatieasema A: pos=(1077,631), id=505
+31. Rautatieasema B: pos=(1078,630), id=575
+32. Rautatieasema C: pos=(1098,630), id=504
+33. Rautatieasema G: pos=(1213,601), id=506
+34. Rongankatu 9: pos=(1058,869), id=108
+35. Rautatieasema F: pos=(1238,591), id=526
+36. Klassillinen koulu: pos=(1037,937), id=529
+37. Klassillinen koulu: pos=(1079,898), id=528
+> change_stop_coord 50 (500,300)
+Tyovaenteatteri : pos=(500,300), id=50
+> stops_coord_order
+1. Pyynikin koulu: pos=(374,132), id=47
+2. Satamakatu 8: pos=(448,246), id=46
+3. Hameenpuisto 31: pos=(276,431), id=80
+4. Tyovaenteatteri : pos=(500,300), id=50
+5. Nalkalantori: pos=(644,0), id=92
+6. Keskustori F: pos=(441,522), id=10
+7. Kauppakatu: pos=(296,617), id=69
+8. Keskustori G: pos=(455,524), id=11
+9. Laukontori: pos=(712,292), id=44
+10. Keskustori I: pos=(661,528), id=42
+11. Keskustori C: pos=(646,571), id=35
+12. Keskustori P: pos=(704,516), id=5
+13. Keskustori R: pos=(711,507), id=41
+14. Keskustori O: pos=(702,523), id=7
+15. Keskustori E: pos=(539,691), id=14
+16. Keskustori N: pos=(699,530), id=8
+17. Keskustori M: pos=(696,535), id=1
+18. Keskustori H: pos=(680,556), id=12
+19. Keskustori L: pos=(692,541), id=2
+20. Keskustori D: pos=(669,574), id=15
+21. Keskustori B: pos=(531,707), id=36
+22. Keskustori A: pos=(522,723), id=3
+23. Finlayson: pos=(352,885), id=87
+24. Pikkupalatsi: pos=(0,966), id=52
+25. Finlayson 2: pos=(468,885), id=38
+26. Koskipuisto I: pos=(937,535), id=519
+27. Paloasema: pos=(736,934), id=536
+28. Aleksanterinkatu : pos=(1104,489), id=553
+29. Paloasema: pos=(745,954), id=537
+30. Rautatieasema A: pos=(1077,631), id=505
+31. Rautatieasema B: pos=(1078,630), id=575
+32. Rautatieasema C: pos=(1098,630), id=504
+33. Rautatieasema G: pos=(1213,601), id=506
+34. Rongankatu 9: pos=(1058,869), id=108
+35. Rautatieasema F: pos=(1238,591), id=526
+36. Klassillinen koulu: pos=(1037,937), id=529
+37. Klassillinen koulu: pos=(1079,898), id=528
+> # Test regions
+> all_regions
+1. Finlayson: id=Fnlsn
+2. Keskusta: id=Ksksta
+3. Keskustori: id=Kskstri
+4. Kyttala: id=Kyttla
+5. Nalkala: id=Nlkla
+6. Sokos: id=Sks
+7. Tammerkoski: id=Tmmrkski
+> stop_regions 7
+Regions for stop Keskustori O: pos=(702,523), id=7
+1. Keskustori: id=Kskstri
+2. Nalkala: id=Nlkla
+3. Keskusta: id=Ksksta
+> stop_regions 519
+Regions for stop Koskipuisto I: pos=(937,535), id=519
+1. Kyttala: id=Kyttla
+2. Keskusta: id=Ksksta
+> stop_regions 537
+Regions for stop Paloasema: pos=(745,954), id=537
+Keskusta: id=Ksksta
+> 
+** End of commands from 'Tretest-compulsory-in.txt'
+> stops_closest_to 92
+1. Laukontori: pos=(712,292), id=44
+2. Pyynikin koulu: pos=(374,132), id=47
+3. Satamakatu 8: pos=(448,246), id=46
+4. Tyovaenteatteri : pos=(500,300), id=50
+5. Keskustori R: pos=(711,507), id=41
+> stops_closest_to 8
+1. Keskustori M: pos=(696,535), id=1
+2. Keskustori O: pos=(702,523), id=7
+3. Keskustori L: pos=(692,541), id=2
+4. Keskustori P: pos=(704,516), id=5
+5. Keskustori R: pos=(711,507), id=41
+> region_bounding_box Kskstri
+Stops in region Keskustori (and subregions) are within (661,507)-(711,574)
+Keskustori: id=Kskstri
+> region_bounding_box Nlkla
+Stops in region Nalkala (and subregions) are within (276,0)-(711,574)
+Nalkala: id=Nlkla
+> region_bounding_box Kyttla
+Stops in region Kyttala (and subregions) are within (736,489)-(1213,937)
+Kyttala: id=Kyttla
+> region_bounding_box Ksksta
+Stops in region Keskusta (and subregions) are within (0,0)-(1238,966)
+Keskusta: id=Ksksta
+> stops_common_region 2 7
+Region: Keskustori: id=Kskstri
+1. Keskustori L: pos=(692,541), id=2
+2. Keskustori O: pos=(702,523), id=7
+> stops_common_region 46 7
+Region: Nalkala: id=Nlkla
+1. Satamakatu 8: pos=(448,246), id=46
+2. Keskustori O: pos=(702,523), id=7
+> stops_common_region 7 519
+Region: Keskusta: id=Ksksta
+1. Keskustori O: pos=(702,523), id=7
+2. Koskipuisto I: pos=(937,535), id=519
+> stops_common_region 7 11
+Region: Nalkala: id=Nlkla
+1. Keskustori O: pos=(702,523), id=7
+2. Keskustori G: pos=(455,524), id=11
+> remove_stop 92
+Stop Nalkalantori removed.
+> region_bounding_box Nlkla
+Stops in region Nalkala (and subregions) are within (276,132)-(711,574)
+Nalkala: id=Nlkla
+> region_bounding_box Ksksta
+Stops in region Keskusta (and subregions) are within (0,132)-(1238,966)
+Keskusta: id=Ksksta
+> min_coord
+Pyynikin koulu: pos=(374,132), id=47
+> max_coord
+Klassillinen koulu: pos=(1079,898), id=528
+> find_stops Nalkalantori
+Failed (NO_... returned)!!
+> 

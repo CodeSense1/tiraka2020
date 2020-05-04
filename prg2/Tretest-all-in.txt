@@ -1,0 +1,23 @@
+read "Tretest-compulsory-in.txt"
+# Test cyclic routes
+journey_with_cycle 14
+add_route Test 3 87
+journey_with_cycle 14
+# Test journey with least stops
+journey_least_stops 526 52
+add_route Test2 528 47 52
+journey_least_stops 526 52
+# Test journey with shortest distance
+journey_shortest_distance 526 52
+add_route Test3 528 536 38 87
+journey_shortest_distance 526 52
+# Test journey with earliest arrival time
+read "Tre-Ksksta-trips.txt"
+routes_from 526
+route_times_from 14c 526
+journey_earliest_arrival 526 52 12:48:00
+add_route Test3 528 536 38 87
+add_trip Test3 13:00:00 13:05:00 13:10:00 13:12:00
+add_route Test4 526 528
+add_trip Test4 12:50:00 13:00:00
+journey_earliest_arrival 526 52 12:48:00

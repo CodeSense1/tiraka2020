@@ -1,0 +1,6 @@
+# Read performance tests of all operations
+read "perftest-compulsory.txt"
+read "perftest-bbox.txt"
+read "perftest-stops_closest_to.txt"
+read "perftest-stops_common_region.txt"
+read "perftest-remove.txt"

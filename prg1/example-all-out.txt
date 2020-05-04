@@ -1,0 +1,197 @@
+> read "example-compulsory-in.txt"
+** Commands from 'example-compulsory-in.txt'
+> clear_all
+Cleared everything.
+> stop_count
+Number of stops: 0
+> read "example-stops.txt" 
+** Commands from 'example-stops.txt'
+> # Add stops
+> add_stop 1 One (1,1)
+One: pos=(1,1), id=1
+> add_stop 2 Two (6,2)
+Two: pos=(6,2), id=2
+> add_stop 3 Three (0,6)
+Three: pos=(0,6), id=3
+> add_stop 4 Four (7,7)
+Four: pos=(7,7), id=4
+> add_stop 5 Five (4,4)
+Five: pos=(4,4), id=5
+> add_stop 6 Six (2,9)
+Six: pos=(2,9), id=6
+> 
+** End of commands from 'example-stops.txt'
+> stop_count
+Number of stops: 6
+> stop_name 1
+Stop ID 1 has name 'One'
+One: pos=(1,1), id=1
+> stop_coord 5
+Stop ID 5 is in position (4,4)
+Five: pos=(4,4), id=5
+> stops_alphabetically
+1. Five: pos=(4,4), id=5
+2. Four: pos=(7,7), id=4
+3. One: pos=(1,1), id=1
+4. Six: pos=(2,9), id=6
+5. Three: pos=(0,6), id=3
+6. Two: pos=(6,2), id=2
+> min_coord
+One: pos=(1,1), id=1
+> max_coord
+Four: pos=(7,7), id=4
+> stops_coord_order
+1. One: pos=(1,1), id=1
+2. Five: pos=(4,4), id=5
+3. Three: pos=(0,6), id=3
+4. Two: pos=(6,2), id=2
+5. Six: pos=(2,9), id=6
+6. Four: pos=(7,7), id=4
+> change_stop_name 5 Two
+Two: pos=(4,4), id=5
+> find_stops Two
+1. Two: pos=(6,2), id=2
+2. Two: pos=(4,4), id=5
+> read "example-regions.txt"
+** Commands from 'example-regions.txt'
+> # Add regions and stops to regions
+> add_region S Small
+Region: Small: id=S
+> add_stop_to_region 1 S
+Added stop One to region Small
+Region: Small: id=S
+One: pos=(1,1), id=1
+> add_stop_to_region 2 S
+Added stop Two to region Small
+Region: Small: id=S
+Two: pos=(6,2), id=2
+> add_stop_to_region 3 S
+Added stop Three to region Small
+Region: Small: id=S
+Three: pos=(0,6), id=3
+> add_region L Large
+Region: Large: id=L
+> add_subregion_to_region S L
+Added subregion Small to region Large
+> add_stop_to_region 4 L
+Added stop Four to region Large
+Region: Large: id=L
+Four: pos=(7,7), id=4
+> add_stop_to_region 5 L
+Added stop Two to region Large
+Region: Large: id=L
+Two: pos=(4,4), id=5
+> add_stop_to_region 6 L
+Added stop Six to region Large
+Region: Large: id=L
+Six: pos=(2,9), id=6
+> 
+** End of commands from 'example-regions.txt'
+> all_regions
+1. Large: id=L
+2. Small: id=S
+> region_name S
+Region ID S has name 'Small'
+Small: id=S
+> stop_regions 1
+Regions for stop One: pos=(1,1), id=1
+1. Small: id=S
+2. Large: id=L
+> quit
+** End of commands from 'example-compulsory-in.txt'
+> add_stop 7 Seven (11,10)
+Seven: pos=(11,10), id=7
+> stops_closest_to 4
+1. Two: pos=(4,4), id=5
+2. Seven: pos=(11,10), id=7
+3. Two: pos=(6,2), id=2
+4. Six: pos=(2,9), id=6
+5. Three: pos=(0,6), id=3
+> region_bounding_box S
+Stops in region Small (and subregions) are within (0,1)-(6,6)
+Small: id=S
+> region_bounding_box L
+Stops in region Large (and subregions) are within (0,1)-(7,9)
+Large: id=L
+> add_region N New
+Region: New: id=N
+> add_stop_to_region 7 N
+Added stop Seven to region New
+Region: New: id=N
+Seven: pos=(11,10), id=7
+> stop_regions 7
+Regions for stop Seven: pos=(11,10), id=7
+New: id=N
+> region_bounding_box N
+Stops in region New (and subregions) are within (11,10)-(11,10)
+New: id=N
+> stops_common_region 1 2
+Region: Small: id=S
+1. One: pos=(1,1), id=1
+2. Two: pos=(6,2), id=2
+> stops_common_region 5 2
+Region: Large: id=L
+1. Two: pos=(4,4), id=5
+2. Two: pos=(6,2), id=2
+> stops_common_region 5 7
+No common region found!
+1. Two: pos=(4,4), id=5
+2. Seven: pos=(11,10), id=7
+> add_subregion_to_region N S
+Added subregion New to region Small
+> stop_regions 7
+Regions for stop Seven: pos=(11,10), id=7
+1. New: id=N
+2. Small: id=S
+3. Large: id=L
+> region_bounding_box S
+Stops in region Small (and subregions) are within (0,1)-(11,10)
+Small: id=S
+> region_bounding_box L
+Stops in region Large (and subregions) are within (0,1)-(11,10)
+Large: id=L
+> min_coord
+One: pos=(1,1), id=1
+> max_coord
+Seven: pos=(11,10), id=7
+> remove_stop 7
+Stop Seven removed.
+> min_coord
+One: pos=(1,1), id=1
+> max_coord
+Four: pos=(7,7), id=4
+> region_bounding_box S
+Stops in region Small (and subregions) are within (0,1)-(6,6)
+Small: id=S
+> region_bounding_box L
+Stops in region Large (and subregions) are within (0,1)-(7,9)
+Large: id=L
+> stops_closest_to 4
+1. Two: pos=(4,4), id=5
+2. Two: pos=(6,2), id=2
+3. Six: pos=(2,9), id=6
+4. Three: pos=(0,6), id=3
+5. One: pos=(1,1), id=1
+> remove_stop 5
+Stop Two removed.
+> find_stops Two
+Two: pos=(6,2), id=2
+> region_bounding_box S
+Stops in region Small (and subregions) are within (0,1)-(6,6)
+Small: id=S
+> region_bounding_box L
+Stops in region Large (and subregions) are within (0,1)-(7,9)
+Large: id=L
+> stops_alphabetically
+1. Four: pos=(7,7), id=4
+2. One: pos=(1,1), id=1
+3. Six: pos=(2,9), id=6
+4. Three: pos=(0,6), id=3
+5. Two: pos=(6,2), id=2
+> stops_coord_order
+1. One: pos=(1,1), id=1
+2. Three: pos=(0,6), id=3
+3. Two: pos=(6,2), id=2
+4. Six: pos=(2,9), id=6
+5. Four: pos=(7,7), id=4
+> 

@@ -1,0 +1,2 @@
+read "example-compulsory-in.txt"
+journey_with_cycle 1

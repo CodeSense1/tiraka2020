@@ -1,0 +1,105 @@
+add_route 29Bt  11 504
+add_route 29Ac  505 35
+add_route 29At  11 504
+add_route 29Bc  505 35
+add_route 21c  519 15
+add_route 21t  2 553
+add_route 25t  12 553
+add_route 25c  519 15
+add_route 42t  10 504
+add_route 42c  575 36
+add_route 42KPt  10 504
+add_route 42Pc  575 36
+add_route 42Pt  10 504
+add_route 42Kc  575 36
+add_route 115t  80 42
+add_route 115c  42 44 46
+add_route 33c  519 5
+add_route 33Yt  5 553
+add_route 33t  5 553
+add_route 33Yc  519 5
+add_route 35t  41 553
+add_route 35c  519 41
+add_route 2c  519 36
+add_route 2t  10 553
+add_route 3Bt  12 504
+# add_route 3Bc  505 15 87 52
+add_route 3Bc  505 15 87
+add_route 3At  12 504
+add_route 3Ac  505 15 87 52
+add_route 26c  519 35
+add_route 4Yt  1 553
+add_route 4Yc  519 1
+add_route 5c  519 42
+add_route 5t  42 553
+add_route 32t  536 529 506
+add_route 8t  11 504
+add_route 8c  505 35
+add_route 11Bc  519 35
+add_route 11Bt  2 553
+add_route 11Ct  2 553
+add_route 11Cc  519 35
+add_route 27c  2 553
+add_route 11c  519 35
+add_route 11t  2 553
+add_route 27t  519 35
+add_route 12c  519 5
+add_route 12t  5 553
+add_route 14c  526 528 537 87
+add_route 14t  38 536 529 506
+# add_route 14Tc  526 528 537 87
+add_route 14Tt  38 536 529 506
+# add_route 15c  526 528
+add_route 15t  529 506
+add_route 17t  12 504
+add_route 17c  505 35
+add_route 24c  87 69 3
+add_route 24t  3 38
+add_route 26t  41 553
+add_route 28Ac  505 15
+add_route 28Bt  11 504
+add_route 28Bc  505 15
+add_route 28At  11 504
+add_route 28Cc  505 15
+add_route 28Ct  11 504
+add_route 32c  526 108
+add_route 40c  505 1
+add_route 10c  519 8
+add_route 10t  8 553
+add_route 31c  519 36
+add_route 31t  10 553
+add_route 40Bc  505 1
+add_route 50Ac  7 553
+add_route 50At  519 7
+add_route 40Bt  1 504
+add_route 50Bc  7 553
+add_route 40At  1 504
+add_route 40Ac  505 1
+add_route 50Bt  519 7
+add_route 40Ct  1 504
+add_route 40t  1 504
+add_route 50Ct  519 7
+add_route 50Cc  7 553
+add_route 50c  7 553
+add_route 50t  519 7
+add_route 40Cc  505 1
+# add_route 71SKc  14 87 52
+# add_route 71Kc  14 87 52
+# add_route 71c  14 87 52
+# add_route 71Sc  14 87 52
+add_route 71Sc  14 87
+add_route 80c  505 3
+add_route 80t  11 504
+add_route 90c  505 36
+add_route 90Tt  10 504
+add_route 90Tc  505 36
+add_route 90t  10 504
+add_route 90Mc  505 36
+add_route 90Mxt  10 504
+add_route 90Mxc  505 36
+add_route 90Mt  10 504
+add_route 90Txt  10 504
+add_route 90Txc  505 36
+add_route 6c  519 36 47 92
+add_route 6t  92 50 80 10 553
+add_route 20t  8 504

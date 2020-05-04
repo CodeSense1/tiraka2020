@@ -1,0 +1,6 @@
+read "example-stops.txt"
+read "example-routes.txt"
+all_routes
+routes_from 1
+route_stops A
+journey_any 1 5

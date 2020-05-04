@@ -1,0 +1,6 @@
+read "Tre-Ksksta-stops.txt"
+read "Tre-Ksksta-routes.txt"
+# Test cyclic routes
+journey_with_cycle 14
+add_route Test 3 87
+journey_with_cycle 14

@@ -1,0 +1,17 @@
+read "Tretest-compulsory-in.txt"
+stops_closest_to 92
+stops_closest_to 8
+region_bounding_box Kskstri
+region_bounding_box Nlkla
+region_bounding_box Kyttla
+region_bounding_box Ksksta
+stops_common_region 2 7
+stops_common_region 46 7
+stops_common_region 7 519
+stops_common_region 7 11
+remove_stop 92
+region_bounding_box Nlkla
+region_bounding_box Ksksta
+min_coord
+max_coord
+find_stops Nalkalantori

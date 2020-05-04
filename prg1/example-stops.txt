@@ -1,0 +1,7 @@
+# Add stops
+add_stop 1 One (1,1)
+add_stop 2 Two (6,2)
+add_stop 3 Three (0,6)
+add_stop 4 Four (7,7)
+add_stop 5 Five (4,4)
+add_stop 6 Six (2,9)

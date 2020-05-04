@@ -1,0 +1,65 @@
+> read "example-compulsory-in.txt"
+** Commands from 'example-compulsory-in.txt'
+> read "example-stops.txt"
+** Commands from 'example-stops.txt'
+> # Add stops
+> add_stop 1 One (1,1)
+One: pos=(1,1), id=1
+> add_stop 2 Two (6,2)
+Two: pos=(6,2), id=2
+> add_stop 3 Three (0,6)
+Three: pos=(0,6), id=3
+> add_stop 4 Four (7,7)
+Four: pos=(7,7), id=4
+> add_stop 5 Five (4,4)
+Five: pos=(4,4), id=5
+> add_stop 6 Six (2,9)
+Six: pos=(2,9), id=6
+> 
+** End of commands from 'example-stops.txt'
+> read "example-routes.txt"
+** Commands from 'example-routes.txt'
+> # Add routes
+> add_route A 1 3 4
+Added route A:
+1. One (1): route A 
+2. Three (3): route A 
+3. Four (4): 
+> add_route B 4 6 3
+Added route B:
+1. Four (4): route B 
+2. Six (6): route B 
+3. Three (3): 
+> add_route C 1 2 5
+Added route C:
+1. One (1): route C 
+2. Two (2): route C 
+3. Five (5): 
+> 
+** End of commands from 'example-routes.txt'
+> all_routes
+1. A
+2. B
+3. C
+> routes_from 1
+1. Three (3): route A 
+2. Two (2): route C 
+> route_stops A
+1. One (1): route A 
+2. Three (3): route A 
+3. Four (4): 
+> journey_any 1 5
+1. One (1): distance 0
+2. Two (2): distance 5
+3. Five (5): distance 7
+> 
+** End of commands from 'example-compulsory-in.txt'
+> add_route D 5 4
+Added route D:
+1. Five (5): route D 
+2. Four (4): 
+> journey_least_stops 1 4
+1. One (1): route A distance 0
+2. Three (3): route A distance 5
+3. Four (4): distance 12
+> 

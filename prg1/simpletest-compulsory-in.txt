@@ -1,0 +1,52 @@
+# VERY simple basic test of all compulsory commands
+# Clear the data structures and check that stop count is zero
+clear_all
+stop_count
+# Test compulsory commands with empty data
+all_stops
+all_regions
+stops_coord_order
+stops_alphabetically
+min_coord
+max_coord
+find_stops MyStop
+# Add one region without stops and test commands
+add_region Reg Region
+all_regions
+region_name Reg
+# Add one stop to the region and test commands
+add_stop 1 One (1,1)
+add_stop_to_region 1 Reg
+stop_count
+all_stops
+stops_coord_order
+stops_alphabetically
+min_coord
+max_coord
+find_stops One
+change_stop_name 1 Yksi
+find_stops Yksi
+find_stops One
+region_bounding_box Reg
+# Add another stop, test more commands
+add_stop 2 Two (2,2)
+change_stop_coord 2 (8,8)
+all_stops
+min_coord
+max_coord
+add_stop_to_region 2 Reg
+region_bounding_box Reg
+stops_alphabetically
+stops_coord_order
+min_coord
+max_coord
+# And a third stop and another region
+add_stop 3 Three (12,12)
+add_region Reg2 Region-2
+all_regions
+add_stop_to_region 3 Reg2
+region_bounding_box Reg2
+add_subregion_to_region Reg Reg2
+region_bounding_box Reg2
+stop_regions 2
+quit

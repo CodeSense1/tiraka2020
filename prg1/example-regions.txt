@@ -1,0 +1,10 @@
+# Add regions and stops to regions
+add_region S Small
+add_stop_to_region 1 S
+add_stop_to_region 2 S
+add_stop_to_region 3 S
+add_region L Large
+add_subregion_to_region S L
+add_stop_to_region 4 L
+add_stop_to_region 5 L
+add_stop_to_region 6 L

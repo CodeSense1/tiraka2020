@@ -1,0 +1,19 @@
+read "Tre-Ksksta-stops.txt"
+read "Tre-Ksksta-regions.txt"
+# Test basic operations
+stop_count
+min_coord
+max_coord
+find_stops Laukontori
+find_stops Finlayson
+change_stop_name 38 Finlayson 2
+find_stops Finlayson
+stops_alphabetically
+stops_coord_order
+change_stop_coord 50 (500,300)
+stops_coord_order
+# Test regions
+all_regions
+stop_regions 7
+stop_regions 519
+stop_regions 537

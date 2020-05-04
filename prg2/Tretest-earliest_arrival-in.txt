@@ -1,0 +1,12 @@
+read "Tre-Ksksta-stops.txt"
+read "Tre-Ksksta-routes.txt"
+read "Tre-Ksksta-trips.txt"
+# Test journey with earliest arrival time
+routes_from 526
+route_times_from 14c 526
+journey_earliest_arrival 526 52 12:48:00
+add_route Test3 528 536 38 87
+add_trip Test3 13:00:00 13:05:00 13:10:00 13:12:00
+add_route Test4 526 528
+add_trip Test4 12:50:00 13:00:00
+journey_earliest_arrival 526 52 12:48:00

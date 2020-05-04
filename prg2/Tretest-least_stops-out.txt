@@ -1,0 +1,516 @@
+> read "Tre-Ksksta-stops.txt"
+** Commands from 'Tre-Ksksta-stops.txt'
+> add_stop 35 Keskustori C (646,571)
+Keskustori C: pos=(646,571), id=35
+> add_stop 44 Laukontori (712,292)
+Laukontori: pos=(712,292), id=44
+> add_stop 526 Rautatieasema F (1238,591)
+Rautatieasema F: pos=(1238,591), id=526
+> add_stop 537 Paloasema (745,954)
+Paloasema: pos=(745,954), id=537
+> add_stop 52 Pikkupalatsi (0,966)
+Pikkupalatsi: pos=(0,966), id=52
+> add_stop 87 Finlayson (352,885)
+Finlayson: pos=(352,885), id=87
+> add_stop 3 Keskustori A (522,723)
+Keskustori A: pos=(522,723), id=3
+> add_stop 14 Keskustori E (539,691)
+Keskustori E: pos=(539,691), id=14
+> add_stop 36 Keskustori B (531,707)
+Keskustori B: pos=(531,707), id=36
+> add_stop 38 Finlayson (468,885)
+Finlayson: pos=(468,885), id=38
+> add_stop 69 Kauppakatu (296,617)
+Kauppakatu: pos=(296,617), id=69
+> add_stop 46 Satamakatu 8 (448,246)
+Satamakatu 8: pos=(448,246), id=46
+> add_stop 47 Pyynikin koulu (374,132)
+Pyynikin koulu: pos=(374,132), id=47
+> add_stop 50 Tyovaenteatteri  (360,265)
+Tyovaenteatteri : pos=(360,265), id=50
+> add_stop 80 Hameenpuisto 31 (276,431)
+Hameenpuisto 31: pos=(276,431), id=80
+> add_stop 92 Nalkalantori (644,0)
+Nalkalantori: pos=(644,0), id=92
+> add_stop 10 Keskustori F (441,522)
+Keskustori F: pos=(441,522), id=10
+> add_stop 11 Keskustori G (455,524)
+Keskustori G: pos=(455,524), id=11
+> add_stop 1 Keskustori M (696,535)
+Keskustori M: pos=(696,535), id=1
+> add_stop 2 Keskustori L (692,541)
+Keskustori L: pos=(692,541), id=2
+> add_stop 5 Keskustori P (704,516)
+Keskustori P: pos=(704,516), id=5
+> add_stop 7 Keskustori O (702,523)
+Keskustori O: pos=(702,523), id=7
+> add_stop 8 Keskustori N (699,530)
+Keskustori N: pos=(699,530), id=8
+> add_stop 12 Keskustori H (680,556)
+Keskustori H: pos=(680,556), id=12
+> add_stop 15 Keskustori D (669,574)
+Keskustori D: pos=(669,574), id=15
+> add_stop 41 Keskustori R (711,507)
+Keskustori R: pos=(711,507), id=41
+> add_stop 42 Keskustori I (661,528)
+Keskustori I: pos=(661,528), id=42
+> add_stop 108 Rongankatu 9 (1058,869)
+Rongankatu 9: pos=(1058,869), id=108
+> add_stop 504 Rautatieasema C (1098,630)
+Rautatieasema C: pos=(1098,630), id=504
+> add_stop 505 Rautatieasema A (1077,631)
+Rautatieasema A: pos=(1077,631), id=505
+> add_stop 506 Rautatieasema G (1213,601)
+Rautatieasema G: pos=(1213,601), id=506
+> add_stop 519 Koskipuisto I (937,535)
+Koskipuisto I: pos=(937,535), id=519
+> add_stop 528 Klassillinen koulu (1079,898)
+Klassillinen koulu: pos=(1079,898), id=528
+> add_stop 529 Klassillinen koulu (1037,937)
+Klassillinen koulu: pos=(1037,937), id=529
+> add_stop 536 Paloasema (736,934)
+Paloasema: pos=(736,934), id=536
+> add_stop 553 Aleksanterinkatu  (1104,489)
+Aleksanterinkatu : pos=(1104,489), id=553
+> add_stop 575 Rautatieasema B (1078,630)
+Rautatieasema B: pos=(1078,630), id=575
+> 
+** End of commands from 'Tre-Ksksta-stops.txt'
+> read "Tre-Ksksta-routes.txt"
+** Commands from 'Tre-Ksksta-routes.txt'
+> add_route 29Bt  11 504
+Added route 29Bt:
+1. Keskustori G (11): route 29Bt 
+2. Rautatieasema C (504): 
+> add_route 29Ac  505 35
+Added route 29Ac:
+1. Rautatieasema A (505): route 29Ac 
+2. Keskustori C (35): 
+> add_route 29At  11 504
+Added route 29At:
+1. Keskustori G (11): route 29At 
+2. Rautatieasema C (504): 
+> add_route 29Bc  505 35
+Added route 29Bc:
+1. Rautatieasema A (505): route 29Bc 
+2. Keskustori C (35): 
+> add_route 21c  519 15
+Added route 21c:
+1. Koskipuisto I (519): route 21c 
+2. Keskustori D (15): 
+> add_route 21t  2 553
+Added route 21t:
+1. Keskustori L (2): route 21t 
+2. Aleksanterinkatu  (553): 
+> add_route 25t  12 553
+Added route 25t:
+1. Keskustori H (12): route 25t 
+2. Aleksanterinkatu  (553): 
+> add_route 25c  519 15
+Added route 25c:
+1. Koskipuisto I (519): route 25c 
+2. Keskustori D (15): 
+> add_route 42t  10 504
+Added route 42t:
+1. Keskustori F (10): route 42t 
+2. Rautatieasema C (504): 
+> add_route 42c  575 36
+Added route 42c:
+1. Rautatieasema B (575): route 42c 
+2. Keskustori B (36): 
+> add_route 42KPt  10 504
+Added route 42KPt:
+1. Keskustori F (10): route 42KPt 
+2. Rautatieasema C (504): 
+> add_route 42Pc  575 36
+Added route 42Pc:
+1. Rautatieasema B (575): route 42Pc 
+2. Keskustori B (36): 
+> add_route 42Pt  10 504
+Added route 42Pt:
+1. Keskustori F (10): route 42Pt 
+2. Rautatieasema C (504): 
+> add_route 42Kc  575 36
+Added route 42Kc:
+1. Rautatieasema B (575): route 42Kc 
+2. Keskustori B (36): 
+> add_route 115t  80 42
+Added route 115t:
+1. Hameenpuisto 31 (80): route 115t 
+2. Keskustori I (42): 
+> add_route 115c  42 44 46
+Added route 115c:
+1. Keskustori I (42): route 115c 
+2. Laukontori (44): route 115c 
+3. Satamakatu 8 (46): 
+> add_route 33c  519 5
+Added route 33c:
+1. Koskipuisto I (519): route 33c 
+2. Keskustori P (5): 
+> add_route 33Yt  5 553
+Added route 33Yt:
+1. Keskustori P (5): route 33Yt 
+2. Aleksanterinkatu  (553): 
+> add_route 33t  5 553
+Added route 33t:
+1. Keskustori P (5): route 33t 
+2. Aleksanterinkatu  (553): 
+> add_route 33Yc  519 5
+Added route 33Yc:
+1. Koskipuisto I (519): route 33Yc 
+2. Keskustori P (5): 
+> add_route 35t  41 553
+Added route 35t:
+1. Keskustori R (41): route 35t 
+2. Aleksanterinkatu  (553): 
+> add_route 35c  519 41
+Added route 35c:
+1. Koskipuisto I (519): route 35c 
+2. Keskustori R (41): 
+> add_route 2c  519 36
+Added route 2c:
+1. Koskipuisto I (519): route 2c 
+2. Keskustori B (36): 
+> add_route 2t  10 553
+Added route 2t:
+1. Keskustori F (10): route 2t 
+2. Aleksanterinkatu  (553): 
+> add_route 3Bt  12 504
+Added route 3Bt:
+1. Keskustori H (12): route 3Bt 
+2. Rautatieasema C (504): 
+> # add_route 3Bc  505 15 87 52
+> add_route 3Bc  505 15 87
+Added route 3Bc:
+1. Rautatieasema A (505): route 3Bc 
+2. Keskustori D (15): route 3Bc 
+3. Finlayson (87): 
+> add_route 3At  12 504
+Added route 3At:
+1. Keskustori H (12): route 3At 
+2. Rautatieasema C (504): 
+> add_route 3Ac  505 15 87 52
+Added route 3Ac:
+1. Rautatieasema A (505): route 3Ac 
+2. Keskustori D (15): route 3Ac 
+3. Finlayson (87): route 3Ac 
+4. Pikkupalatsi (52): 
+> add_route 26c  519 35
+Added route 26c:
+1. Koskipuisto I (519): route 26c 
+2. Keskustori C (35): 
+> add_route 4Yt  1 553
+Added route 4Yt:
+1. Keskustori M (1): route 4Yt 
+2. Aleksanterinkatu  (553): 
+> add_route 4Yc  519 1
+Added route 4Yc:
+1. Koskipuisto I (519): route 4Yc 
+2. Keskustori M (1): 
+> add_route 5c  519 42
+Added route 5c:
+1. Koskipuisto I (519): route 5c 
+2. Keskustori I (42): 
+> add_route 5t  42 553
+Added route 5t:
+1. Keskustori I (42): route 5t 
+2. Aleksanterinkatu  (553): 
+> add_route 32t  536 529 506
+Added route 32t:
+1. Paloasema (536): route 32t 
+2. Klassillinen koulu (529): route 32t 
+3. Rautatieasema G (506): 
+> add_route 8t  11 504
+Added route 8t:
+1. Keskustori G (11): route 8t 
+2. Rautatieasema C (504): 
+> add_route 8c  505 35
+Added route 8c:
+1. Rautatieasema A (505): route 8c 
+2. Keskustori C (35): 
+> add_route 11Bc  519 35
+Added route 11Bc:
+1. Koskipuisto I (519): route 11Bc 
+2. Keskustori C (35): 
+> add_route 11Bt  2 553
+Added route 11Bt:
+1. Keskustori L (2): route 11Bt 
+2. Aleksanterinkatu  (553): 
+> add_route 11Ct  2 553
+Added route 11Ct:
+1. Keskustori L (2): route 11Ct 
+2. Aleksanterinkatu  (553): 
+> add_route 11Cc  519 35
+Added route 11Cc:
+1. Koskipuisto I (519): route 11Cc 
+2. Keskustori C (35): 
+> add_route 27c  2 553
+Added route 27c:
+1. Keskustori L (2): route 27c 
+2. Aleksanterinkatu  (553): 
+> add_route 11c  519 35
+Added route 11c:
+1. Koskipuisto I (519): route 11c 
+2. Keskustori C (35): 
+> add_route 11t  2 553
+Added route 11t:
+1. Keskustori L (2): route 11t 
+2. Aleksanterinkatu  (553): 
+> add_route 27t  519 35
+Added route 27t:
+1. Koskipuisto I (519): route 27t 
+2. Keskustori C (35): 
+> add_route 12c  519 5
+Added route 12c:
+1. Koskipuisto I (519): route 12c 
+2. Keskustori P (5): 
+> add_route 12t  5 553
+Added route 12t:
+1. Keskustori P (5): route 12t 
+2. Aleksanterinkatu  (553): 
+> add_route 14c  526 528 537 87
+Added route 14c:
+1. Rautatieasema F (526): route 14c 
+2. Klassillinen koulu (528): route 14c 
+3. Paloasema (537): route 14c 
+4. Finlayson (87): 
+> add_route 14t  38 536 529 506
+Added route 14t:
+1. Finlayson (38): route 14t 
+2. Paloasema (536): route 14t 
+3. Klassillinen koulu (529): route 14t 
+4. Rautatieasema G (506): 
+> # add_route 14Tc  526 528 537 87
+> add_route 14Tt  38 536 529 506
+Added route 14Tt:
+1. Finlayson (38): route 14Tt 
+2. Paloasema (536): route 14Tt 
+3. Klassillinen koulu (529): route 14Tt 
+4. Rautatieasema G (506): 
+> # add_route 15c  526 528
+> add_route 15t  529 506
+Added route 15t:
+1. Klassillinen koulu (529): route 15t 
+2. Rautatieasema G (506): 
+> add_route 17t  12 504
+Added route 17t:
+1. Keskustori H (12): route 17t 
+2. Rautatieasema C (504): 
+> add_route 17c  505 35
+Added route 17c:
+1. Rautatieasema A (505): route 17c 
+2. Keskustori C (35): 
+> add_route 24c  87 69 3
+Added route 24c:
+1. Finlayson (87): route 24c 
+2. Kauppakatu (69): route 24c 
+3. Keskustori A (3): 
+> add_route 24t  3 38
+Added route 24t:
+1. Keskustori A (3): route 24t 
+2. Finlayson (38): 
+> add_route 26t  41 553
+Added route 26t:
+1. Keskustori R (41): route 26t 
+2. Aleksanterinkatu  (553): 
+> add_route 28Ac  505 15
+Added route 28Ac:
+1. Rautatieasema A (505): route 28Ac 
+2. Keskustori D (15): 
+> add_route 28Bt  11 504
+Added route 28Bt:
+1. Keskustori G (11): route 28Bt 
+2. Rautatieasema C (504): 
+> add_route 28Bc  505 15
+Added route 28Bc:
+1. Rautatieasema A (505): route 28Bc 
+2. Keskustori D (15): 
+> add_route 28At  11 504
+Added route 28At:
+1. Keskustori G (11): route 28At 
+2. Rautatieasema C (504): 
+> add_route 28Cc  505 15
+Added route 28Cc:
+1. Rautatieasema A (505): route 28Cc 
+2. Keskustori D (15): 
+> add_route 28Ct  11 504
+Added route 28Ct:
+1. Keskustori G (11): route 28Ct 
+2. Rautatieasema C (504): 
+> add_route 32c  526 108
+Added route 32c:
+1. Rautatieasema F (526): route 32c 
+2. Rongankatu 9 (108): 
+> add_route 40c  505 1
+Added route 40c:
+1. Rautatieasema A (505): route 40c 
+2. Keskustori M (1): 
+> add_route 10c  519 8
+Added route 10c:
+1. Koskipuisto I (519): route 10c 
+2. Keskustori N (8): 
+> add_route 10t  8 553
+Added route 10t:
+1. Keskustori N (8): route 10t 
+2. Aleksanterinkatu  (553): 
+> add_route 31c  519 36
+Added route 31c:
+1. Koskipuisto I (519): route 31c 
+2. Keskustori B (36): 
+> add_route 31t  10 553
+Added route 31t:
+1. Keskustori F (10): route 31t 
+2. Aleksanterinkatu  (553): 
+> add_route 40Bc  505 1
+Added route 40Bc:
+1. Rautatieasema A (505): route 40Bc 
+2. Keskustori M (1): 
+> add_route 50Ac  7 553
+Added route 50Ac:
+1. Keskustori O (7): route 50Ac 
+2. Aleksanterinkatu  (553): 
+> add_route 50At  519 7
+Added route 50At:
+1. Koskipuisto I (519): route 50At 
+2. Keskustori O (7): 
+> add_route 40Bt  1 504
+Added route 40Bt:
+1. Keskustori M (1): route 40Bt 
+2. Rautatieasema C (504): 
+> add_route 50Bc  7 553
+Added route 50Bc:
+1. Keskustori O (7): route 50Bc 
+2. Aleksanterinkatu  (553): 
+> add_route 40At  1 504
+Added route 40At:
+1. Keskustori M (1): route 40At 
+2. Rautatieasema C (504): 
+> add_route 40Ac  505 1
+Added route 40Ac:
+1. Rautatieasema A (505): route 40Ac 
+2. Keskustori M (1): 
+> add_route 50Bt  519 7
+Added route 50Bt:
+1. Koskipuisto I (519): route 50Bt 
+2. Keskustori O (7): 
+> add_route 40Ct  1 504
+Added route 40Ct:
+1. Keskustori M (1): route 40Ct 
+2. Rautatieasema C (504): 
+> add_route 40t  1 504
+Added route 40t:
+1. Keskustori M (1): route 40t 
+2. Rautatieasema C (504): 
+> add_route 50Ct  519 7
+Added route 50Ct:
+1. Koskipuisto I (519): route 50Ct 
+2. Keskustori O (7): 
+> add_route 50Cc  7 553
+Added route 50Cc:
+1. Keskustori O (7): route 50Cc 
+2. Aleksanterinkatu  (553): 
+> add_route 50c  7 553
+Added route 50c:
+1. Keskustori O (7): route 50c 
+2. Aleksanterinkatu  (553): 
+> add_route 50t  519 7
+Added route 50t:
+1. Koskipuisto I (519): route 50t 
+2. Keskustori O (7): 
+> add_route 40Cc  505 1
+Added route 40Cc:
+1. Rautatieasema A (505): route 40Cc 
+2. Keskustori M (1): 
+> # add_route 71SKc  14 87 52
+> # add_route 71Kc  14 87 52
+> # add_route 71c  14 87 52
+> # add_route 71Sc  14 87 52
+> add_route 71Sc  14 87
+Added route 71Sc:
+1. Keskustori E (14): route 71Sc 
+2. Finlayson (87): 
+> add_route 80c  505 3
+Added route 80c:
+1. Rautatieasema A (505): route 80c 
+2. Keskustori A (3): 
+> add_route 80t  11 504
+Added route 80t:
+1. Keskustori G (11): route 80t 
+2. Rautatieasema C (504): 
+> add_route 90c  505 36
+Added route 90c:
+1. Rautatieasema A (505): route 90c 
+2. Keskustori B (36): 
+> add_route 90Tt  10 504
+Added route 90Tt:
+1. Keskustori F (10): route 90Tt 
+2. Rautatieasema C (504): 
+> add_route 90Tc  505 36
+Added route 90Tc:
+1. Rautatieasema A (505): route 90Tc 
+2. Keskustori B (36): 
+> add_route 90t  10 504
+Added route 90t:
+1. Keskustori F (10): route 90t 
+2. Rautatieasema C (504): 
+> add_route 90Mc  505 36
+Added route 90Mc:
+1. Rautatieasema A (505): route 90Mc 
+2. Keskustori B (36): 
+> add_route 90Mxt  10 504
+Added route 90Mxt:
+1. Keskustori F (10): route 90Mxt 
+2. Rautatieasema C (504): 
+> add_route 90Mxc  505 36
+Added route 90Mxc:
+1. Rautatieasema A (505): route 90Mxc 
+2. Keskustori B (36): 
+> add_route 90Mt  10 504
+Added route 90Mt:
+1. Keskustori F (10): route 90Mt 
+2. Rautatieasema C (504): 
+> add_route 90Txt  10 504
+Added route 90Txt:
+1. Keskustori F (10): route 90Txt 
+2. Rautatieasema C (504): 
+> add_route 90Txc  505 36
+Added route 90Txc:
+1. Rautatieasema A (505): route 90Txc 
+2. Keskustori B (36): 
+> add_route 6c  519 36 47 92
+Added route 6c:
+1. Koskipuisto I (519): route 6c 
+2. Keskustori B (36): route 6c 
+3. Pyynikin koulu (47): route 6c 
+4. Nalkalantori (92): 
+> add_route 6t  92 50 80 10 553
+Added route 6t:
+1. Nalkalantori (92): route 6t 
+2. Tyovaenteatteri  (50): route 6t 
+3. Hameenpuisto 31 (80): route 6t 
+4. Keskustori F (10): route 6t 
+5. Aleksanterinkatu  (553): 
+> add_route 20t  8 504
+Added route 20t:
+1. Keskustori N (8): route 20t 
+2. Rautatieasema C (504): 
+> 
+** End of commands from 'Tre-Ksksta-routes.txt'
+> # Test journey with least stops
+> journey_least_stops 526 52
+1. Rautatieasema F (526): route 14c distance 0
+2. Klassillinen koulu (528): route 14c distance 345
+3. Paloasema (537): route 14c distance 683
+4. Finlayson (87): route 3Ac distance 1082
+5. Pikkupalatsi (52): distance 1443
+> add_route Test2 528 47 52
+Added route Test2:
+1. Klassillinen koulu (528): route Test2 
+2. Pyynikin koulu (47): route Test2 
+3. Pikkupalatsi (52): 
+> journey_least_stops 526 52
+1. Rautatieasema F (526): route 14c distance 0
+2. Klassillinen koulu (528): route Test2 distance 345
+3. Pyynikin koulu (47): route Test2 distance 1386
+4. Pikkupalatsi (52): distance 2300
+> 

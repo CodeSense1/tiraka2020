@@ -1,0 +1,9 @@
+read "Tre-Ksksta-stops.txt"
+read "Tre-Ksksta-routes.txt"
+# Test basic operations
+stop_count
+routes_from 12
+routes_from 80
+route_stops 14c
+route_stops 6t
+journey_any 36 46

@@ -1,0 +1,17 @@
+clear_all
+stop_count
+read "example-stops.txt" 
+stop_count
+stop_name 1
+stop_coord 5
+stops_alphabetically
+min_coord
+max_coord
+stops_coord_order
+change_stop_name 5 Two
+find_stops Two
+read "example-regions.txt"
+all_regions
+region_name S
+stop_regions 1
+quit

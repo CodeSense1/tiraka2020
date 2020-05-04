@@ -1,0 +1,77 @@
+> # VERY simple basic test of all compulsory commands
+> # Clear the data structures and check that stop count is zero
+> clear_routes
+All routes removed.
+> # Test compulsory commands with empty data
+> all_stops
+No stops!
+> all_routes
+No routes!
+> # Add two stops and one route
+> add_stop 1 One (1,1)
+One: pos=(1,1), id=1
+> add_stop 2 Two (2,2)
+Two: pos=(2,2), id=2
+> add_route R 1 2
+Added route R:
+1. One (1): route R 
+2. Two (2): 
+> # Check that route is found
+> all_routes
+1. R
+> route_stops R
+1. One (1): route R 
+2. Two (2): 
+> routes_from 1
+1. Two (2): route R 
+> routes_from 2
+No routes from stop Two: pos=(2,2), id=2
+
+> # Clear the route and check
+> clear_routes
+All routes removed.
+> all_routes
+No routes!
+> routes_from 1
+No routes from stop One: pos=(1,1), id=1
+
+> # Re-insert the route
+> add_route R 1 2
+Added route R:
+1. One (1): route R 
+2. Two (2): 
+> # The for journey search
+> journey_any 1 2
+1. One (1): distance 0
+2. Two (2): distance 1
+> # And a third stop and another route
+> add_stop 3 Three (12,12)
+Three: pos=(12,12), id=3
+> add_route X 2 3
+Added route X:
+1. Two (2): route X 
+2. Three (3): 
+> routes_from 2
+1. Three (3): route X 
+> journey_any 1 3
+1. One (1): distance 0
+2. Two (2): distance 1
+3. Three (3): distance 15
+> # And a fourth stop and yet another route
+> add_stop 4 Four (6,0)
+Four: pos=(6,0), id=4
+> add_route Y 1 4
+Added route Y:
+1. One (1): route Y 
+2. Four (4): 
+> all_routes
+1. R
+2. X
+3. Y
+> routes_from 1
+1. Two (2): route R 
+2. Four (4): route Y 
+> journey_any 1 2
+1. One (1): distance 0
+2. Two (2): distance 1
+> quit

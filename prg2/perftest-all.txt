@@ -1,0 +1,6 @@
+# Read performance tests of all operations
+read "perftest-compulsory.txt"
+read "perftest-journey_least_stops.txt"
+read "perftest-journey_with_cycle.txt"
+read "perftest-journey_shortest_distance.txt"
+read "perftest-journey_earliest_arrival.txt"

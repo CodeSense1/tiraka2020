@@ -1,0 +1,12 @@
+read "example-compulsory-in.txt"
+journey_with_cycle 1
+add_route D 5 4
+journey_least_stops 1 4
+journey_shortest_distance 1 4
+read "example-trips.txt"
+route_times_from C 2
+journey_earliest_arrival 1 5 08:45:00
+journey_earliest_arrival 1 6 08:00:00
+add_trip D 08:25:00 08:30:00
+route_times_from A 1
+journey_earliest_arrival 1 6 08:00:00

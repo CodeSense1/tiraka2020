@@ -1,0 +1,30 @@
+read "example-compulsory-in.txt"
+add_stop 7 Seven (11,10)
+stops_closest_to 4
+region_bounding_box S
+region_bounding_box L
+add_region N New
+add_stop_to_region 7 N
+stop_regions 7
+region_bounding_box N
+stops_common_region 1 2
+stops_common_region 5 2
+stops_common_region 5 7
+add_subregion_to_region N S
+stop_regions 7
+region_bounding_box S
+region_bounding_box L
+min_coord
+max_coord
+remove_stop 7
+min_coord
+max_coord
+region_bounding_box S
+region_bounding_box L
+stops_closest_to 4
+remove_stop 5
+find_stops Two
+region_bounding_box S
+region_bounding_box L
+stops_alphabetically
+stops_coord_order

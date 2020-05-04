@@ -1,0 +1,35 @@
+# VERY simple basic test of all compulsory commands
+# Clear the data structures and check that stop count is zero
+clear_routes
+# Test compulsory commands with empty data
+all_stops
+all_routes
+# Add two stops and one route
+add_stop 1 One (1,1)
+add_stop 2 Two (2,2)
+add_route R 1 2
+# Check that route is found
+all_routes
+route_stops R
+routes_from 1
+routes_from 2
+# Clear the route and check
+clear_routes
+all_routes
+routes_from 1
+# Re-insert the route
+add_route R 1 2
+# The for journey search
+journey_any 1 2
+# And a third stop and another route
+add_stop 3 Three (12,12)
+add_route X 2 3
+routes_from 2
+journey_any 1 3
+# And a fourth stop and yet another route
+add_stop 4 Four (6,0)
+add_route Y 1 4
+all_routes
+routes_from 1
+journey_any 1 2
+quit

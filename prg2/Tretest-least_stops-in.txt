@@ -1,0 +1,6 @@
+read "Tre-Ksksta-stops.txt"
+read "Tre-Ksksta-routes.txt"
+# Test journey with least stops
+journey_least_stops 526 52
+add_route Test2 528 47 52
+journey_least_stops 526 52
